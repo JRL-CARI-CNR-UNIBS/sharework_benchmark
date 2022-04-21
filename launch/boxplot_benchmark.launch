@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- <arg name="csv_name"  default="$(find sharework_benchmark)/config/res.csv"/> -->
+
+  <arg name="test_name" default="sharework_benchmark_res.csv" />
+  <arg name="figure_folder" default="/home/$(env USER)/.ros" />
+
+  <node pkg="benchmark_pipelines"  type="result_boxplot.py" name="result_boxplot" output="screen">
+    <param name="csv_name"  value="$(arg test_name)"/>
+    <param name="figure_folder"  value="$(arg figure_folder)"/>
+    <rosparam command="load"  file="$(find sharework_benchmark)/config/plot_params.yaml"/>
+  </node>
+
+</launch>

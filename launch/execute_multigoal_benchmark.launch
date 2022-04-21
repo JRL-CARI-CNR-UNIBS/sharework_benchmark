@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="test_name" default="multigoal_queries" />
+<arg name="test_name" default="sharework_benchmark" />
 
 <node pkg="benchmark_pipelines"  type="execute_multigoal_benchmark.py" name="multigoal_benchmark" output="screen">
    <rosparam command="load"  file="$(find sharework_benchmark)/config/$(arg test_name).yaml"/>
-   <rosparam param="test_name">$(arg test_name)</rosparam>
+   <param name="test_name" value="$(arg test_name)"/>
 </node>
 
 </launch>

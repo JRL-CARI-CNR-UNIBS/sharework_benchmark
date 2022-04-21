@@ -1,0 +1,5 @@
+planner_names_map:
+  dirrt_paper: "Mixed-strategy RRT*"
+  informed_rrt: "Informer RRT*"
+
+boxplot_planning_times: [1.0, 2.0, 5.0]
