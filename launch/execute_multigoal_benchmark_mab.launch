@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<!--  <arg name="test_name" default="sharework_benchmark" /> -->
+
+<arg name="test_name" default="sharework_multi_armed_bandit_benchmark_n4" />
+
+<node pkg="benchmark_pipelines"  type="execute_multigoal_benchmark.py" name="multigoal_benchmark" output="screen">
+   <rosparam command="load"  file="$(find sharework_benchmark)/config/sharework_multi_armed_bandit_benchmark/$(arg test_name).yaml"/>
+   <!-- <rosparam command="load"  file="$(find sharework_benchmark)/config/$(arg test_name).yaml"/> -->
+   <param name="test_name" value="$(arg test_name)"/>
+</node>
+
+</launch>

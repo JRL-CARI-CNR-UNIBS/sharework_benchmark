@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
+
 <arg name="test_name" default="sharework_benchmark" />
 
 <node pkg="benchmark_pipelines"  type="execute_multigoal_benchmark.py" name="multigoal_benchmark" output="screen">

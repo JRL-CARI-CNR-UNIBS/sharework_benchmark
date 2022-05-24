@@ -5,6 +5,13 @@ planner_ids:
   dirrt:
   - dirrt_paper
   - informed_rrt
+  - mab_egreedy
+  - mab_egreedy_ws
+  - mab_uniform
+  - mab_uniform_volume
+  - dirrt_egreedy
+  - mab_egreedy_5
+
 
 planning_time: 5.0
 long_planning_time: 20.0 # first repetition planning time
@@ -12,7 +19,7 @@ long_planning_time: 20.0 # first repetition planning time
 queries_number: 2
 query_prefix: cubes
 scenarios: [tavolo,barriera]
-repetitions: 5
+repetitions: 10
 starting_query: 0
 
 # scenarios
