@@ -1,11 +1,14 @@
 group_name: manipulator # name of your moveit planning group
 pipeline_ids: #list of pipelines to be compared. e.g. dirrt, ompl
-- dirrt
+- dirrt # dirrt is the pipeline from CNR
+- ompl   # you can use multiple pipelines only in Noetic. Otherise you'll need to run them separately
 planner_ids:
   dirrt: # for each pipeline, the list of planners to be compared
   - dirrt_paper
   - informed_rrt
-
+  - rrt_star
+  ompl:    # you can use multiple pipelines only in Noetic. Otherise you'll need to run them separately
+  - RRTConnect
 planning_time: 5.0
 long_planning_time: 20.0 # first repetition planning time, it will be used as  ground truth
 

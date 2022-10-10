@@ -1,6 +1,7 @@
 planner_names_map:
   dirrt_paper: "Sharework planner"
   informed_rrt: "Informed RRT*"
+  rrt_star: "RRT*"
 
 # plot_only_map_names: false # if true, only planners in the list above will be plotted
 
