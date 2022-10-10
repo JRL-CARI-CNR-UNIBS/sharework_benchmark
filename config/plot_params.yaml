@@ -1,5 +1,37 @@
 planner_names_map:
-  dirrt_paper: "Mixed-strategy RRT*"
-  informed_rrt: "Informer RRT*"
+  # dirrt_paper: "Mixed-strategy RRT*"
+  # informed_rrt: "Informer RRT*"
+  mab_uniform_volume: mab_uniform_volume
+  mab_egreedy_adaptive_reward: mab_egreedy_adaptive_reward
+  mab_egreedy_adaptive_reward_eps: mab_egreedy_adaptive_reward_eps
+  mab_egreedy_adaptive_eps:  mab_egreedy_adaptive_eps
+  mab_egreedy_eps_decreasing_bernoulli: mab_egreedy_eps_decreasing_bernoulli
+  mab_egreedy_adaptive_reward_eps_decreasing: mab_egreedy_adaptive_reward_eps_decreasing
+  mab_egreedy_eps_decreasing: mab_egreedy_eps_decreasing
+#  mab_egreedy_20: mab_egreedy_20
+#  mab_egreedy_10: mab_egreedy_10
+  mab_uniform: mab_uniform
+#  mab_ts_bernoulli: mab_ts_bernoulli
+#  mab_ucb1: mab_ucb1
+
+
+#  - mab_uniform_volume
+#  - mab_egreedy_adaptive_reward
+#  - mab_egreedy_adaptive_eps
+#  - mab_egreedy_adaptive_reward_eps
+#  - mab_egreedy_eps_decreasing
+#  - mab_egreedy_eps_decreasing_bernoulli
+#  - mab_egreedy_adaptive_reward_eps_decreasing
+#  - mab_egreedy_20_bernoulli
+#  - mab_egreedy_20
+#  - mab_egreedy_50
+#  - mab_ucb1
+#  - mab_ts_bernoulli
+#  - mab_uniform
+
+plot_only_map_names: true
 
 boxplot_planning_times: [1.0, 2.0, 5.0]
+
+axis_xlim: 10.0
+axis_ylim: 2.0
