@@ -1,5 +1,7 @@
 planner_names_map:
-  dirrt_paper: "Mixed-strategy RRT*"
-  informed_rrt: "Informer RRT*"
+  dirrt_paper: "Sharework planner"
+  informed_rrt: "Informed RRT*"
+
+# plot_only_map_names: false # if true, only planners in the list above will be plotted
 
 boxplot_planning_times: [1.0, 2.0, 5.0]
